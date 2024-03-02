@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace HelloWorld
 {
     internal static class Program
@@ -11,7 +13,8 @@ namespace HelloWorld
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Trace.WriteLine("Hello World");
+            Application.Run(new RollADice());
         }
     }
 }
